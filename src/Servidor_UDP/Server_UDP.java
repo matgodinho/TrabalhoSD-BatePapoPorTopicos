@@ -7,11 +7,16 @@ package Servidor_UDP;
 
 import Models.UserTopicModel;
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import jdbc.ConnectionFactory;
 
 /**
@@ -47,9 +52,31 @@ public class Server_UDP {
                     String sql = "select * from usuario";
 
                     PreparedStatement st;
+   try {
+                        st = conexao.prepareStatement(sql);
+                        ResultSet result = st.executeQuery();
+                                                              
+                        while (result.next()) {
+                           
+                            if (result.getInt("codusuario") == topic.getCodusuario() && result.getString("senha").equals(topic.getSenha())) {
+                                key = true;
+                                codUserOK = true;
+                                break;
+                            }
+                        }
+                        sql = "select * from topicos";
+                        st = conexao.prepareStatement(sql);
+                        result = st.executeQuery();
+                        while (result.next()) {
+                            if (result.getInt("codtopico") == topic.getCodtopico()) {
+                               
+                                codTopicOK = true;
+                                       break;
+                            }
+                        }
+   }
                 }
             }
-           
-            }
+         }
      }
 }
