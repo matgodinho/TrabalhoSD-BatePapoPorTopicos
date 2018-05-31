@@ -3,19 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bate_papo_por_topicos;
+package WebSeviceSOAP;
+
+import Models.ModelUrl;
+import javax.xml.ws.Endpoint;
 
 /**
  *
- * @author 
+ * @author Diego
  */
-public class Bate_Papo_por_Topicos {
+public class Web_Service_SOAP {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ModelUrl s = new ModelUrl();
+        Endpoint.publish(s.GetAux(),new Implements_SOAP());
+        
     }
     
 }
