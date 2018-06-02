@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * Classe com o modelo de usuário
+ * Classe com o modelo de usuário.
  */
 
 public class UserModel implements Serializable{

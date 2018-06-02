@@ -9,14 +9,14 @@ import java.net.DatagramSocket;
 
 /**
  *
- * @author rafael
+ * @author Rafael
  */
 public class Server_UDP {
       DatagramSocket socket = null;
-    static final int porta = 1233;
-    public Server_UDP() {
+      static final int porta = 1233;
+      public Server_UDP() {
 
-    }
+ }
     
     
 }
