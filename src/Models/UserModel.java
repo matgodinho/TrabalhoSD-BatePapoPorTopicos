@@ -9,8 +9,9 @@ import java.io.Serializable;
 
 /**
  *
- * classe com o modelo de usuario
+ * Classe com o modelo de usuário
  */
+
 public class UserModel implements Serializable{
     private static final long serialVersionUID = 5950169519310163575L;
     private int id;
