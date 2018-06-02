@@ -9,11 +9,28 @@ package Models;
  *
  * @author Matheus
  */
-
 /**
- * 
+ *
  * Classe utilizada para auxiliar na gravação dos tópicos no BD.
  */
 public class TopicModel {
-    
+
+    int codtopico;
+
+    public int getCodtopico() {
+        return codtopico;
+    }
+
+    public void setCodtopico(int codtopico) {
+        this.codtopico = codtopico;
+    }
+
+    public String getTopico() {
+        return topico;
+    }
+
+    public void setTopico(String topico) {
+        this.topico = topico;
+    }
+    String topico;
 }
