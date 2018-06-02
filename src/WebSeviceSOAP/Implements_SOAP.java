@@ -189,7 +189,7 @@ public class Implements_SOAP implements Interface_SOAP, Serializable {
     @Override
     public void RegistrarChat(int user1, int user2, int topico) {
 
-        String sql = "insert into chat (codusuario1,codusuario2,DataHora,Topico)values(?,?,now(),?)";
+        String sql = "insert into chat (codchat,codusuario1,codusuario2,DataHora,Topico)values(nextval('chat_codchat_seq'),?,?,now(),?)";
 
         try {
             PreparedStatement st = conexao.prepareStatement(sql);
