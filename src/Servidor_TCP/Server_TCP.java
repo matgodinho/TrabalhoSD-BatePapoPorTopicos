@@ -5,10 +5,21 @@
  */
 package Servidor_TCP;
 
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+
 /**
  *
  * @author Matheus
  */
+
 public class Server_TCP {
-    
+    private ServerSocket serverSocket = null;
+    private Socket socket = null;
+    private ObjectInputStream inStream = null;
+    private ObjectInputStream inputStream = null;
+    private ObjectOutputStream outputStream = null;
+   
 }
+
