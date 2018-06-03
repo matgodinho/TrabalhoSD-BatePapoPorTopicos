@@ -104,7 +104,7 @@ public class Server_TCP {
                             user.setNome(result.getString("nome"));
                             user.setIPaddres(result.getString("IPaddres"));
 
-                            ListaUsers.add(user);//adiciona user a lista
+                            ListaUsers.add(user);
 
                         }
                         result.close();
