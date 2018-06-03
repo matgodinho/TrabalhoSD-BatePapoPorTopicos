@@ -9,10 +9,6 @@ import java.io.Serializable;
 
 /**
  *
- * @author Matheus
- */
-/**
- *
  * Classe com o modelo de usuário e tópico usado na UDP para realizar a
  * validação do login.
  */

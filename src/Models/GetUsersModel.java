@@ -7,11 +7,6 @@ package Models;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Matheus
- */
-
 public class GetUsersModel implements Serializable {
 
     private static final long serialVersionUID = 5950169519310163575L;

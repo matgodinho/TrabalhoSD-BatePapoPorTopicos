@@ -16,10 +16,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Listar_User extends javax.swing.JFrame {
 
     /**
@@ -27,7 +23,7 @@ public class Screen_Listar_User extends javax.swing.JFrame {
      */
     public Screen_Listar_User() {
         initComponents();
-                        
+
         URL url = null;
         try {
             ModelUrl s = new ModelUrl();
@@ -38,25 +34,23 @@ public class Screen_Listar_User extends javax.swing.JFrame {
         QName qname = new QName("http://WebSeviceSOAP/", "Implements_SOAPService");
         Service ws = Service.create(url, qname);
         Interface_SOAP inter = ws.getPort(Interface_SOAP.class);
-        
-       UserModel ListaUsers[] = 
-       
-       
-       ListaUsers = inter.Listar();
-       
-       DefaultTableModel modelo = new DefaultTableModel();// define modelo da tabela
-       
+
+        UserModel ListaUsers[]
+                = ListaUsers = inter.Listar();
+
+        DefaultTableModel modelo = new DefaultTableModel();// define modelo da tabela
+
         modelo.addColumn("Código Usuario");//nomeia colunas
         modelo.addColumn("Nome");
         modelo.addColumn("IP Address");
-       
-       for(UserModel user:ListaUsers){
-       
-           modelo.addRow(new String[]{""+user.getId(),user.getNome(),user.getIPaddres()});
-           
-       }
-       jTable1.setModel(modelo);
-        
+
+        for (UserModel user : ListaUsers) {
+
+            modelo.addRow(new String[]{"" + user.getId(), user.getNome(), user.getIPaddres()});
+
+        }
+        jTable1.setModel(modelo);
+
     }
 
     /**
@@ -122,7 +116,7 @@ public class Screen_Listar_User extends javax.swing.JFrame {
         Screen_Control_User a = new Screen_Control_User();
         a.setVisible(true);
         dispose();
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

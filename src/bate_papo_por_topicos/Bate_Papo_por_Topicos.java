@@ -5,10 +5,6 @@
  */
 package bate_papo_por_topicos;
 
-/**
- *
- * @author maisa
- */
 public class Bate_Papo_por_Topicos {
 
     /**
@@ -17,5 +13,5 @@ public class Bate_Papo_por_Topicos {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
+
 }

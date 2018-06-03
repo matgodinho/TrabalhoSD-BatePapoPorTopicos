@@ -5,10 +5,6 @@
  */
 package WebSeviceSOAP.Telas;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Control_User extends javax.swing.JFrame {
 
     /**
@@ -117,11 +113,11 @@ public class Screen_Control_User extends javax.swing.JFrame {
 
     private void button_ADDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_ADDActionPerformed
         // TODO add your handling code here:
-        
+
         dispose();
         Screen_Register_User a = new Screen_Register_User();
         a.setVisible(true);
-        
+
     }//GEN-LAST:event_button_ADDActionPerformed
 
     private void button_DELActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_DELActionPerformed
@@ -129,31 +125,31 @@ public class Screen_Control_User extends javax.swing.JFrame {
         dispose();
         Screen_Delete_User a = new Screen_Delete_User();
         a.setVisible(true);
-        
+
     }//GEN-LAST:event_button_DELActionPerformed
 
     private void button_ALTERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_ALTERActionPerformed
         // TODO add your handling code here:
-        
+
         dispose();
         Screen_Alter_User a = new Screen_Alter_User();
         a.setVisible(true);
-        
+
     }//GEN-LAST:event_button_ALTERActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         dispose();
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+
         Screen_Listar_User a = new Screen_Listar_User();
         a.setVisible(true);
         dispose();
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

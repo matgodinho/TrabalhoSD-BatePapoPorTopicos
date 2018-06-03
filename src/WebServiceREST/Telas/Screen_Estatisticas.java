@@ -13,10 +13,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Estatisticas extends javax.swing.JFrame {
 
     // boolean alternar = true;
@@ -280,13 +276,14 @@ public class Screen_Estatisticas extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(textDataInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(textDataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9)
-                    .addComponent(jToggleButton1)
-                    .addComponent(jLabel10))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8)
+                        .addComponent(textDataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9)
+                        .addComponent(jToggleButton1)
+                        .addComponent(jLabel10)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -450,21 +447,21 @@ public class Screen_Estatisticas extends javax.swing.JFrame {
 
             String list[] = new String[8];
 
-            list[0]="Eleições 2018";
-            list[1]="Segurança pública";
-            list[2]="Preço da gasolina";
-            list[3]="Sistema nacional de saúde";
-            list[4]="Aposentadoria";
-            list[5]="Traição";
-            list[6]="Multas de trânsito";
-            list[7]="Educação";
+            list[0] = "Eleições 2018";
+            list[1] = "Segurança pública";
+            list[2] = "Preço da gasolina";
+            list[3] = "Sistema nacional de saúde";
+            list[4] = "Aposentadoria";
+            list[5] = "Traição";
+            list[6] = "Multas de trânsito";
+            list[7] = "Educação";
 
             DefaultTableModel modelo = new DefaultTableModel();// define modelo da tabela
 
             modelo.addColumn("Tópicos");//nomeia colunas
             modelo.addColumn("Acessos");
-            
-            int k=0;
+
+            int k = 0;
             String aux = new String();
             for (int i = 0; i < resposta.length(); i++) {
                 if (resposta.substring(i, i + 1).equals(" ")) {

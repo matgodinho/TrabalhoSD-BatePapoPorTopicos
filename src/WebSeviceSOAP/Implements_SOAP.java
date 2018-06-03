@@ -50,7 +50,7 @@ public class Implements_SOAP implements Interface_SOAP, Serializable {
     }
 
     @Override
-    public void Alterar(int id, String nome,String senha, String IPaddres) {
+    public void Alterar(int id, String nome, String senha, String IPaddres) {
         // string que sera enviada ao banco para realizar uma açao
         String sql = "update usuario set nome=?,IPaddres=?,senha=? where codusuario=?";
 
@@ -113,9 +113,9 @@ public class Implements_SOAP implements Interface_SOAP, Serializable {
             e.printStackTrace();
         }
         UserModel ListaUsuarios[] = new UserModel[TamanhoVet];
-        
+
         sql = "select * from usuario";// seleciona todos os users
-        
+
         try {
             int i = 0;
             st = conexao.prepareStatement(sql);// 

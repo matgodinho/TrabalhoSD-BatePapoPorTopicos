@@ -7,10 +7,6 @@ package Models;
 
 /**
  *
- * @author Matheus
- */
-/**
- *
  * Classe utilizada para auxiliar na gravação dos tópicos no BD.
  */
 public class TopicModel {

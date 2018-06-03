@@ -11,8 +11,8 @@ import java.io.Serializable;
  *
  * Classe com o modelo de usuário.
  */
+public class UserModel implements Serializable {
 
-public class UserModel implements Serializable{
     private static final long serialVersionUID = 5950169519310163575L;
     private int id;
     private String nome;
@@ -59,7 +59,7 @@ public class UserModel implements Serializable{
 
     @Override
     public String toString() {
-        return ""+id;
+        return "" + id;
     }
 
     public void setIPaddres(String IPaddres) {

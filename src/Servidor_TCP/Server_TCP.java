@@ -17,10 +17,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import jdbc.ConnectionFactory;
 
-/**
- *
- * @author Matheus
- */
 public class Server_TCP {
 
     private ServerSocket serverSocket = null;

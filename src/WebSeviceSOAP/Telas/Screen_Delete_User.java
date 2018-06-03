@@ -19,10 +19,6 @@ import javax.swing.JOptionPane;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Delete_User extends javax.swing.JFrame {
 
     UserModel usuarios[];
@@ -234,23 +230,22 @@ public class Screen_Delete_User extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(jList1.getSelectedIndex() == -1){
-        
-            JOptionPane.showMessageDialog(null,"Selecione ao menos 1(um) usuário!! ");
+        if (jList1.getSelectedIndex() == -1) {
+
+            JOptionPane.showMessageDialog(null, "Selecione ao menos 1(um) usuário!! ");
             return;
-            
+
         }
         String selecionado = jList1.getSelectedValue();
-        
+
         for (UserModel usuario : usuarios) {
-            if(usuario.getNome().equals(selecionado))
-            {            
-                id_user.setText(""+usuario.getId());
+            if (usuario.getNome().equals(selecionado)) {
+                id_user.setText("" + usuario.getId());
                 name.setText(usuario.getNome());
                 IP_Addres.setText(usuario.getIPaddres());
             }
         }
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

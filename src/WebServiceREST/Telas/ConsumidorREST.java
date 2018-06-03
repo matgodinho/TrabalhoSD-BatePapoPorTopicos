@@ -12,10 +12,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- *
- * @author marcelosiedler
- */
 public class ConsumidorREST {
 
     private final String USER_AGENT = "Mozilla/5.0";
@@ -23,7 +19,6 @@ public class ConsumidorREST {
     // HTTP GET request
     public String sendGet(String url) throws Exception {
 
-        
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
@@ -49,7 +44,7 @@ public class ConsumidorREST {
 
         //print result
         return response.toString();
-        
+
     }
 
 }

@@ -10,8 +10,8 @@ package Models;
  * Classe para pegar IP de conexão com WebService SOAP.
  */
 public class ModelUrl {
+
     private String aux = "http://192.168.2.169:9876/WebSeviceSOAP";
-    
 
     public String GetAux() {
         return aux;

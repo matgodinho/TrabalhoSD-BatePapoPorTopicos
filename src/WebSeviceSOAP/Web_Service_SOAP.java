@@ -8,10 +8,6 @@ package WebSeviceSOAP;
 import Models.ModelUrl;
 import javax.xml.ws.Endpoint;
 
-/**
- *
- * @author Diego
- */
 public class Web_Service_SOAP {
 
     /**
@@ -20,8 +16,8 @@ public class Web_Service_SOAP {
     public static void main(String[] args) {
         // TODO code application logic here
         ModelUrl s = new ModelUrl();
-        Endpoint.publish(s.GetAux(),new Implements_SOAP());
-        
+        Endpoint.publish(s.GetAux(), new Implements_SOAP());
+
     }
-    
+
 }

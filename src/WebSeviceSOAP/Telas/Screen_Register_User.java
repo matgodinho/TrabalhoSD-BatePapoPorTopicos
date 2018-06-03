@@ -15,17 +15,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Register_User extends javax.swing.JFrame {
 
-    
-   
-    
     public Screen_Register_User() {
-        
+
         initComponents();
     }
 
@@ -174,27 +167,26 @@ public class Screen_Register_User extends javax.swing.JFrame {
         URL url = null;
         try {
             ModelUrl s = new ModelUrl();
-            url = new URL(s.GetAux()+"?wsdl");
+            url = new URL(s.GetAux() + "?wsdl");
         } catch (MalformedURLException ex) {
             Logger.getLogger(Screen_Register_User.class.getName()).log(Level.SEVERE, null, ex);
         }
-        QName qname = new QName("http://WebSeviceSOAP/","Implements_SOAPService");
+        QName qname = new QName("http://WebSeviceSOAP/", "Implements_SOAPService");
         Service ws = Service.create(url, qname);
         Interface_SOAP inter = ws.getPort(Interface_SOAP.class);
-        
-       int aux = Integer.parseInt(text_field_id.getText());
-       //System.out.println("aux" + aux);
-       int ok = 1;
-       ok = inter.Incluir(aux, text_field_nome.getText(),text_Senha.getText(), text_field_IP.getText());
-       
-       //int ok = 1; 
+
+        int aux = Integer.parseInt(text_field_id.getText());
+        //System.out.println("aux" + aux);
+        int ok = 1;
+        ok = inter.Incluir(aux, text_field_nome.getText(), text_Senha.getText(), text_field_IP.getText());
+
+        //int ok = 1; 
         System.out.println(ok);
-       if(ok == 1){
-           JOptionPane.showMessageDialog(null,"Adicionado com sucesso");
-       }
-       else{
-       JOptionPane.showMessageDialog(null,"Erro ao adicionar usuario");
-       }
+        if (ok == 1) {
+            JOptionPane.showMessageDialog(null, "Adicionado com sucesso");
+        } else {
+            JOptionPane.showMessageDialog(null, "Erro ao adicionar usuario");
+        }
     }//GEN-LAST:event_Button_RegisterActionPerformed
 
     private void text_field_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_field_idActionPerformed

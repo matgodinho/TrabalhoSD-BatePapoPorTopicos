@@ -19,10 +19,6 @@ import javax.swing.JOptionPane;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
-/**
- *
- * @author Diego
- */
 public class Screen_Alter_User extends javax.swing.JFrame {
 
     UserModel usuarios[];
