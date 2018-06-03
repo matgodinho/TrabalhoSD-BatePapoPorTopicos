@@ -109,7 +109,20 @@ public class Server_UDP {
                 codUserOK = false;
                 codTopicOK = false;
                 key = false;
-            }
-            }
-     }
+             }while(true);
+
+        } catch (SocketException e) {
+            e.printStackTrace();
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+    }
+    
+    public static void main(String[] args)throws Exception{
+      
+        
+        Server_UDP server = new Server_UDP();
+        server.createSocket();
+        
+    }
 }
