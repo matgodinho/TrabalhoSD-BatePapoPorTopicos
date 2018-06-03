@@ -72,11 +72,44 @@ public class Server_UDP {
                                
                                 codTopicOK = true;
                                        break;
-                            }
-                        }
-   }
-                }
-            }
          }
+                        }
+                        result.close();
+                        st.close();
+                    } catch (SQLException e) {
+                        
+                        e.printStackTrace();
+                    }
+
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                
+                
+                String reply = new String();
+                
+                InetAddress IPAddress = incomingPacket.getAddress();
+                int port = incomingPacket.getPort();
+                
+              
+                
+                if(!codTopicOK) reply = "1";
+                
+                if(!codUserOK) reply = "2";
+                if(codUserOK && codTopicOK && key) reply = "3"; 
+                
+                System.out.println(reply);
+                System.out.println(reply.getBytes());
+                byte replyBytea[] = reply.getBytes();
+                 
+                DatagramPacket replyPacket = new DatagramPacket(replyBytea, replyBytea.length, IPAddress, port);
+                socket.send(replyPacket);
+               
+                
+                codUserOK = false;
+                codTopicOK = false;
+                key = false;
+            }
+            }
      }
 }
