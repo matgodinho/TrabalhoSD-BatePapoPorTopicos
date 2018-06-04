@@ -1,0 +1,100 @@
+<? xml version = "1.0" encoding = "UTF-8"?>
+
+<Form version = "1.3" maxVersion = "1.9" type = "org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Nome da propriedade = "defaultCloseOperation" type = "int" value = "3" />
+  </ Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name = "formSizePolicy" type = "int" valor = "1" />
+    <SyntheticProperty name = "generateCenter" type = "booleano" value = "false" />
+  </ SyntheticProperties>
+  <AuxValues>
+    <Nome do AuxValue = "FormSettings_autoResourcing" type = "java.lang.Integer" value = "0" />
+    <Nome do AuxValue = "FormSettings_autoSetComponentName" type = "java.lang.Boolean" value = "false" />
+    <Nome do AuxValue = "FormSettings_generateFQN" type = "java.lang.Boolean" value = "true" />
+    <Nome do AuxValue = "FormSettings_generateMnemonicsCode" type = "java.lang.Boolean" value = "false" />
+    <Nome do AuxValue = "FormSettings_i18nAutoMode" type = "java.lang.Boolean" value = "false" />
+    <Nome do AuxValue = "FormSettings_layoutCodeTarget" type = "java.lang.Integer" value = "1" />
+    <Nome do AuxValue = "FormSettings_listenerGenerationStyle" type = "java.lang.Integer" value = "0" />
+    <Nome do AuxValue = "FormSettings_variablesLocal" type = "java.lang.Boolean" value = "false" />
+    <Nome do AuxValue = "FormSettings_variablesModifier" type = "java.lang.Integer" value = "2" />
+  </ AuxValues>
+
+  <Layout>
+    <DimensionLayout dim = "0">
+      <Group type = "103" groupAlignment = "0" attributes = "0">
+          <Group type = "102" alignment = "0" attributes = "0">
+              <EmptySpace min = "- 2" pref = "19" max = "- 2" atributos = "0" />
+              <Group type = "103" groupAlignment = "0" attributes = "0">
+                  <Component id = "jScrollPane2" max = "32767" attributes = "0" />
+                  <Group type = "102" attributes = "0">
+                      <Component id = "textoEnviar" min = "- 2" pref = "564" max = "- 2" atributos = "0" />
+                      <EmptySpace max = "- 2" attributes = "0" />
+                      <Componente id = "enviar" min = "- 2" pref = "64" max = "- 2" atributos = "0" />
+                      <EmptySpace max = "32767" attributes = "0" />
+                      <Component id = "Sair" min = "- 2" pref = "63" max = "- 2" atributos = "0" />
+                  </ Group>
+              </ Group>
+              <EmptySpace max = "- 2" attributes = "0" />
+          </ Group>
+      </ Group>
+    </ DimensionLayout>
+    <DimensionLayout dim = "1">
+      <Group type = "103" groupAlignment = "0" attributes = "0">
+          <Group type = "102" alignment = "0" attributes = "0">
+              <EmptySpace max = "- 2" attributes = "0" />
+              <Component id = "jScrollPane2" pref = "237" max = "32767" atributos = "0" />
+              <EmptySpace type = "unrelated" max = "- 2" attributes = "0" />
+              <Group type = "103" groupAlignment = "0" attributes = "0">
+                  <Componente id = "Sair" alinhamento = "1" max = "32767" attributes = "0" />
+                  <Group type = "102" attributes = "0">
+                      <Componente id = "enviar" min = "- 2" pref = "30" max = "- 2" atributos = "0" />
+                      <EmptySpace min = "0" pref = "0" max = "32767" atributos = "0" />
+                  </ Group>
+                  <Component id = "textoEnviar" max = "32767" attributes = "0" />
+              </ Group>
+              <EmptySpace max = "- 2" attributes = "0" />
+          </ Group>
+      </ Group>
+    </ DimensionLayout>
+  </ Layout>
+  <Subcomponentes>
+    <Container class = "javax.swing.JScrollPane" name = "jScrollPane2">
+      <AuxValues>
+        <Nome do AuxValue = "autoScrollPane" type = "java.lang.Boolean" value = "true" />
+      </ AuxValues>
+
+      <Layout class = "org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout" />
+      <Subcomponentes>
+        <Component class = "javax.swing.JTextArea" name = "textoChat">
+          <Properties>
+            <Nome da propriedade = "editable" type = "boolean" value = "false" />
+            <Nome da propriedade = "colunas" type = "int" value = "20" />
+            <Nome da propriedade = "linhas" type = "int" valor = "5" />
+          </ Properties>
+        </ Component>
+      </ Subcomponentes>
+    </ Container>
+    <Component class = "javax.swing.JTextField" name = "textoEnviar">
+      <Eventos>
+        <EventHandler event = "actionPerformed" listener = "java.awt.event.ActionListener" parameters = "java.awt.event.ActionEvent" handler = "textoEnviarActionPerformed" />
+      </ Eventos>
+    </ Component>
+    <Component class = "javax.swing.JButton" name = "enviar">
+      <Properties>
+        <Nome da propriedade = "texto" type = "java.lang.String" value = "Enviar" />
+      </ Properties>
+      <Eventos>
+        <EventHandler event = "actionPerformed" listener = "java.awt.event.ActionListener" parameters = "java.awt.event.ActionEvent" handler = "enviarActionPerformed" />
+      </ Eventos>
+    </ Component>
+    <Component class = "javax.swing.JButton" name = "Sair">
+      <Properties>
+        <Nome da propriedade = "texto" type = "java.lang.String" value = "Sair" />
+      </ Properties>
+      <Eventos>
+        <EventHandler event = "actionPerformed" listener = "java.awt.event.ActionListener" parameters = "java.awt.event.ActionEvent" handler = "SairActionPerformed" />
+      </ Eventos>
+    </ Component>
+  </ Subcomponentes>
+</ Form>
