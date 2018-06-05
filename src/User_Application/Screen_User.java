@@ -33,10 +33,6 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import jdbc.ConnectionFactory;
 
-/**
- *
- * @author Diego
- */
 public class Screen_User extends javax.swing.JFrame {
 
     /**
