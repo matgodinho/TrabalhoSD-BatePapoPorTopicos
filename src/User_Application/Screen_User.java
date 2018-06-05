@@ -33,7 +33,10 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import jdbc.ConnectionFactory;
 
-
+/**
+ *
+ * @author Diego
+ */
 public class Screen_User extends javax.swing.JFrame {
 
     /**
@@ -201,7 +204,7 @@ public class Screen_User extends javax.swing.JFrame {
         try {
             int porta = 1233; // porta do server udp
             Socket = new DatagramSocket();//socket udp
-            InetAddress IPAddress = InetAddress.getLocalHost();//trocar por IP do server udp
+            InetAddress IPAddress = InetAddress.getByName("LCI-9-05");//trocar por IP do server udp
             byte[] incomingData = new byte[1024];//vetor de bytes q vai armazenar o que quero enviar
             
             UserTopicModel userTopicModel = new UserTopicModel(codUser,senha,codTopic);
