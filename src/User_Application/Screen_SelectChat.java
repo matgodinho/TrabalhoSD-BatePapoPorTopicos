@@ -32,10 +32,6 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import jdbc.ConnectionFactory;
 
-/**
- *
- * @author Diego
- */
 public class Screen_SelectChat extends javax.swing.JFrame {
     private int coduser;
     private Socket socket = null;
